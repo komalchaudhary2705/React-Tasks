@@ -1,50 +1,56 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { IoIosSave } from "react-icons/io";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { MdOutlineMessage } from "react-icons/md";
 import { LuLayoutList } from "react-icons/lu";
 import { FaUserCircle } from "react-icons/fa";
+
 const Navbar = () => {
   return (
-    <nav
-      className="bg-[#1f999a] py-[6%] px-4
-    flex items-center justify-between"
-    >
-      {/* logo */}
-      <Link to="/">
-        <h1>MZONE</h1>
+    <nav className="bg-[#1f999a] py-6 px-[11%] flex items-center justify-between">
+      {/* Logo */}
+      <Link to="/" className="text-white text-xl font-bold">
+        MZONE
       </Link>
-      {/* nav menulinks */}
-      <div>
-        <ul className="flex gap-6">
-          <li className="bg-[#f6f0f044] text-white hover:bg-amber-400 hover:text-black rounded-full w-7 h-7 flex items-center justify-center">
-            <NavLink>
-              <IoIosSave />
+
+      {/* Links + Button */}
+      <div className="flex items-center gap-6">
+        <ul className="flex items-center gap-4">
+          <li className="bg-[#f6f0f044] text-white hover:bg-amber-400 hover:text-black rounded-full w-8 h-8 flex items-center justify-center">
+            <NavLink to="/saved">
+              <IoIosSave size={20} />
             </NavLink>
           </li>
-          <li className=" rounded-full w-7 h-7">
-            <Link>
-              <IoMdNotificationsOutline />
+
+          <li className="bg-[#f6f0f044] text-white hover:bg-amber-400 hover:text-black rounded-full w-8 h-8 flex items-center justify-center">
+            <Link to="/notifications">
+              <IoMdNotificationsOutline size={20} />
             </Link>
           </li>
-          <li className="bg-[black] rounded-full w-7 h-7">
-            <Link>
-              <MdOutlineMessage />
+
+          <li className="bg-[#f6f0f044] text-white hover:bg-amber-400 hover:text-black rounded-full w-8 h-8 flex items-center justify-center">
+            <Link to="/messages">
+              <MdOutlineMessage size={20} />
             </Link>
           </li>
-          <li className="bg-[black] rounded-full w-7 h-7">
-            <Link>
-              <LuLayoutList />
+
+          <li className="bg-[#f6f0f044] text-white hover:bg-amber-400 hover:text-black rounded-full w-8 h-8 flex items-center justify-center">
+            <Link to="/listings">
+              <LuLayoutList size={20} />
             </Link>
           </li>
-          <li className="bg-[black] rounded-full w-7 h-7">
-            <Link>
-              <FaUserCircle />
+
+          <li className="bg-orange-400 rounded-full w-8 h-8 flex items-center justify-center">
+            <Link to="/profile">
+              <FaUserCircle size={20} />
             </Link>
           </li>
         </ul>
-        <button className="bg-white px-3 py-1">Start Selling</button>
+
+        <button className="bg-white  font-semibold px-4 py-1 rounded shadow">
+          Start Selling
+        </button>
       </div>
     </nav>
   );
