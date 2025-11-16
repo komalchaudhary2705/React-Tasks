@@ -1,17 +1,19 @@
 import React from 'react'
-import Sidear from './Sidear'
-import Rightsection from './Rightsection'
+
+
+import Sidebar from './Sidebar'
+
 
 const MainSection = () => {
   return (
     <div className='flex justify-center pt-10'>
         <div className='bg-white w-[85%] h-[75vh] rounded'>
         <div className='flex w-full h-full'>
-            <Sidear/>
-            <Rightsection/>
+            <Sidebar/>
+            
         </div>
         </div>
-       
+    
         </div>
   )
 }

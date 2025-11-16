@@ -6,7 +6,7 @@ import { MdOutlineFeed } from "react-icons/md";
 import { FaQuestionCircle } from "react-icons/fa";
 import { MdOutlineSettings } from "react-icons/md";
 import { TbLogout2 } from "react-icons/tb";
-const Sidear = () => {
+const Sidebar = () => {
   return (
     <div className="w-[200px] h-full border-2 border-gray-100 rounded">
       {/* user profile */}
@@ -31,4 +31,4 @@ const Sidear = () => {
   );
 };
 
-export default Sidear;
+export default Sidebar;

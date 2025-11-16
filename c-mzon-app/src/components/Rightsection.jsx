@@ -1,9 +1,11 @@
+
+
 import React from 'react'
 
-const Rightsection = () => {
+const RightSection = () => {
   return (
-    <div>Rightsection</div>
+    <div>RightSection</div>
   )
 }
 
-export default Rightsection
+export default RightSection
