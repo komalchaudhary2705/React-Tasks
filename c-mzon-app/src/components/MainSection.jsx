@@ -2,6 +2,7 @@ import React from 'react'
 
 
 import Sidebar from './Sidebar'
+import RightSection from './Rightsection'
 
 
 const MainSection = () => {
@@ -10,7 +11,7 @@ const MainSection = () => {
         <div className='bg-white w-[85%] h-[75vh] rounded'>
         <div className='flex w-full h-full'>
             <Sidebar/>
-            
+            <RightSection/>
         </div>
         </div>
     
