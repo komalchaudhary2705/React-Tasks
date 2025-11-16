@@ -41,9 +41,9 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li className="bg-orange-400 rounded-full w-8 h-8 flex items-center justify-center">
+          <li className="bg-white text-orange-600 rounded-full w-8 h-8 flex items-center justify-center">
             <Link to="/">
-              <FaUserCircle size={20} />
+              <FaUserCircle size={30} />
             </Link>
           </li>
         </ul>
