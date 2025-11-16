@@ -2,7 +2,12 @@ import React from 'react'
 
 const MainSection = () => {
   return (
-    <div>MainSection</div>
+    <div className='flex justify-center pt-10'>
+        <div className='bg-white w-[85%] h-[80vh] rounded'>
+
+        </div>
+       
+        </div>
   )
 }
 
