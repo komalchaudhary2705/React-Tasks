@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { IoIosSave } from "react-icons/io";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { MdOutlineMessage } from "react-icons/md";
@@ -18,9 +18,9 @@ const Navbar = () => {
       <div className="flex items-center gap-6">
         <ul className="flex items-center gap-4">
           <li className="bg-[#f6f0f044] text-white hover:bg-amber-400 hover:text-black rounded-full w-8 h-8 flex items-center justify-center">
-            <NavLink to="/saved">
+            <Link to="/saved">
               <IoIosSave size={20} />
-            </NavLink>
+            </Link>
           </li>
 
           <li className="bg-[#f6f0f044] text-white hover:bg-amber-400 hover:text-black rounded-full w-8 h-8 flex items-center justify-center">
